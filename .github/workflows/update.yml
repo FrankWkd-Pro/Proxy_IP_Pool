@@ -30,8 +30,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@users.noreply.github.com'
+          git config --global user.name 'FrankWkd-Pro[Bot]'
+          git config --global user.email 'frankwkd@outlook.com'
           git add data/valid_ips.txt
           git commit -m "Update valid proxies"
           git push
