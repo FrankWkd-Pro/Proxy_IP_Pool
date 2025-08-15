@@ -10,6 +10,7 @@ A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Usin
 
 
 # 免责声明 / Disclaimer
+## 使用即代表您同意一下所有条款：/ By using it, you agree to all of the following terms:
 ### 1. 项目目的声明
 本项目（Proxy IP Pool）仅为技术研究与学习目的开发，旨在探索网络爬虫、代理验证等技术实现原理。项目提供的代理IP仅用于教育目的，不得用于任何非法活动或商业用途。  
 **项目创作者(FrankWkd-Pro)具有最高级别的项目解释权。**
@@ -50,11 +51,11 @@ A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Usin
 
 #### 7. 严格禁止条款
 **使用本项目即表示您同意以下严格禁令**：
--❌ 禁止任何非法活动（包括但不限于黑客攻击、欺诈、侵犯隐私）
--❌ 禁止侵犯知识产权（版权、商标等）
--❌ 禁止传播恶意软件、发起网络攻击或破坏性活动
--❌ 禁止访问非法内容或规避地理限制
--❌ 禁止商业用途及转售代理服务
+- 禁止任何非法活动（包括但不限于黑客攻击、欺诈、侵犯隐私）
+- 禁止侵犯知识产权（版权、商标等）
+- 禁止传播恶意软件、发起网络攻击或破坏性活动
+- 禁止访问非法内容或规避地理限制
+- 禁止商业用途及转售代理服务
 
 #### 8. 有限使用授权
 本项目仅授予**临时、非独占、不可转让、可撤销**的使用权：
@@ -86,8 +87,6 @@ A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Usin
 - 禁止存储、存档或重新分发代理列表
 - 禁止使用自动化工具持续下载数据
 - 使用前必须验证代理是否符合本地法律
-
----
 
 ---
 
@@ -132,11 +131,11 @@ Under no circumstances shall the project authors and contributors be liable for 
 
 #### 7. Strict Prohibitions
 **By using this project, you agree to the following strict prohibitions**:
--❌ No illegal activities (including but not limited to hacking, fraud, privacy infringement)
--❌ No intellectual property violations (copyright, trademarks, etc.)
--❌ No malware distribution, network attacks, or destructive activities
--❌ No access to illegal content or geo-restriction circumvention
--❌ No commercial use or resale of proxy services
+- No illegal activities (including but not limited to hacking, fraud, privacy infringement)
+- No intellectual property violations (copyright, trademarks, etc.)
+- No malware distribution, network attacks, or destructive activities
+- No access to illegal content or geo-restriction circumvention
+- No commercial use or resale of proxy services
 
 #### 8. Limited Use License
 This project grants only a **temporary, non-exclusive, non-transferable, revocable** license:
