@@ -1,14 +1,8 @@
-import os
-import json
-import time
-import sys
-from datetime import datetime
-
 def format_commit_message():
     """生成格式化的提交消息"""
     try:
         # 读取验证统计数据
-        with open('validation_stats.json') as f:
+        with open('stats/validation_stats.json') as f:  # 注意这里修正了文件路径！
             stats = json.load(f)
         
         # 提取关键指标
@@ -23,33 +17,22 @@ def format_commit_message():
         # 获取当前时间
         current_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
         
-        # 生成状态表情符号
-        status_emoji = "✅" if valid_count > 0 else "⚠️"
+        # 生成状态标记（用文字代替emoji）
+        status_flag = "Success" if valid_count > 0 else "Warning"
         
-        # 构建提交消息
+        # 构建提交消息（移除所有emoji和特殊符号）
         message = (
-            f"🤖 [Bot] Update Available proxies {status_emoji}\n\n"
-            f"🔹 Valid proxies: {valid_count}/{total_count} ({success_percent})\n"
-            f"⏱️ Validation time: {validation_time:.2f}s\n"
-            f"🕒 Update time: {current_time}"
+            f"[Bot] Update Available proxies {status_flag}\n\n"
+            f"Valid proxies: {valid_count}/{total_count} ({success_percent})\n"
+            f"Validation time: {validation_time:.2f}s\n"
+            f"Update time: {current_time}"
         )
         
         return message
     
     except FileNotFoundError:
         # 如果找不到统计文件，使用默认消息
-        return "🤖 [Bot] Update Available proxies ⚠️\n\n🔹 No validation data available"
+        return "[Bot] Update Available proxies Warning\n\nNo validation data available"
     except Exception as e:
         # 其他异常处理
-        return f"🤖 [Bot] Update Available proxies ❌\n\n🔹 Error formatting message: {str(e)}"
-
-if __name__ == "__main__":
-    commit_message = format_commit_message()
-    print(commit_message)
-    
-    # 将消息写入文件供Git使用
-    with open('commit_message.txt', 'w') as f:
-        f.write(commit_message)
-    
-    # 退出代码：0=成功，1=错误
-    sys.exit(0 if "❌" not in commit_message else 1)
+        return f"[Bot] Update Available proxies Error\n\nError formatting message: {str(e)}"
