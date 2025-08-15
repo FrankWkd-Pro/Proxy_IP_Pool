@@ -34,6 +34,7 @@ jobs:
         id: commit-message
         run: |
           {
+            python scripts/commit_formatter.py
             echo 'COMMIT_MESSAGE<<EOF'
             cat commit_message.txt 
             echo EOF
