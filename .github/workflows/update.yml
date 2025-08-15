@@ -2,7 +2,7 @@ name: Proxy Pool Update
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时运行一次
+    - cron: '*/30 * * * *'  # 每30min运行一次
   workflow_dispatch:       # 支持手动触发
 
 jobs:
@@ -32,5 +32,5 @@ jobs:
           git config --global user.name 'FrankWkd-Pro[Bot]'
           git config --global user.email 'frankwkd@outlook.com'
           git add data/valid_ips.txt
-          git commit -m "Update valid proxies"
+          git commit -m "[Bot] Proxy IP Updated"
           git push
