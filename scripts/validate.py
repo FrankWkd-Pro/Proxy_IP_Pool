@@ -3,6 +3,7 @@ import concurrent.futures
 import os
 import time
 import logging
+import json  # 确保导入json模块
 from datetime import datetime
 
 # 配置详细日志
@@ -125,7 +126,7 @@ def log_progress(current, total, valid_count, start_time):
     speed = current / elapsed if elapsed > 0 else 0
     
     progress = f"🚀 Progress: {current}/{total} ({processed_percent:.1f}%)"
-    stats = f"✅ Valid: {valid_count} | ⏱️ Elapsed: {elapsed:.1f}s | 📈 Speed: {speed:.1f} proxies/s"
+    stats = f"✅ Valid: {valid_count} | ️ Elapsed: {elapsed:.1f}s |  📈 Speed: {speed:.1f} proxies/s"
     
     logger.info(progress)
     logger.info(stats)
@@ -176,10 +177,26 @@ if __name__ == "__main__":
     with open('data/valid_ips.txt', 'w') as f:
         f.write('\n'.join(valid_proxies))
     
-    # 最终报告
+    # 最终报告统计数据收集
     validation_time = time.time() - start_time
     success_rate = (len(valid_proxies) / total_proxies) * 100 if total_proxies > 0 else 0
     
+    # 写入验证统计信息
+    stats = {
+        "valid_count": len(valid_proxies),
+        "total_count": total_proxies,
+        "success_rate": success_rate,
+        "validation_time": validation_time,
+        "run_timestamp": datetime.now().isoformat()
+    }
+    
+    # 确保stats目录存在
+    os.makedirs('stats', exist_ok=True)
+    with open('stats/validation_stats.json', 'w') as stats_file:
+        json.dump(stats, stats_file, indent=2)
+    logger.info(f"📊 Validation statistics saved to stats/validation_stats.json")
+    
+    # 最终报告日志输出
     logger.info("=" * 70)
     logger.info(f"🏁 VALIDATION COMPLETED - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info(f"📊 Results: {len(valid_proxies)} valid out of {total_proxies} ({success_rate:.2f}% success rate)")
