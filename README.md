@@ -10,7 +10,8 @@ A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Usin
 
 
 # 免责声明 / Disclaimer
-## 使用即代表您同意一下所有条款：/ By using it, you agree to all of the following terms:
+> ## 使用即代表您同意以下所有条款：
+> ## By using it, you agree to all of the following terms:
 ### 1. 项目目的声明
 本项目（Proxy IP Pool）仅为技术研究与学习目的开发，旨在探索网络爬虫、代理验证等技术实现原理。项目提供的代理IP仅用于教育目的，不得用于任何非法活动或商业用途。  
 **项目创作者(FrankWkd-Pro)具有最高级别的项目解释权。**
