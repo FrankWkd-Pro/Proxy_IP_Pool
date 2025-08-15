@@ -34,14 +34,11 @@ jobs:
         id: commit-message
         run: |
           python scripts/commit_formatter.py
-          # 修复：确保EOF单独成行且无多余字符
-          {
-            echo "COMMIT_MESSAGE<<EOF"
-            cat commit_message.txt
-            echo "EOF"
-          } >> $GITHUB_ENV
-
-
+          # 使用更可靠的多行环境变量写法，避免EOF冲突
+          echo "COMMIT_MESSAGE<<'EOF'" >> $GITHUB_ENV
+          cat commit_message.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+          
       - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Actions Bot'
