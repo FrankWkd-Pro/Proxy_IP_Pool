@@ -118,15 +118,23 @@ def test_proxy(proxy):
         logger.debug(f"Test result for {proxy}: {result}")
     
     return None
-
 def log_progress(current, total, valid_count, start_time):
-    """记录验证进度"""
+    """记录验证进度并估算剩余时间"""
     elapsed = time.time() - start_time
     processed_percent = (current / total) * 100
     speed = current / elapsed if elapsed > 0 else 0
     
+    # 估算剩余时间（秒）
+    remaining_proxies = total - current
+    remaining_time = remaining_proxies / speed if speed > 0 else 0
+    
+    # 格式化时间显示（转换为分:秒格式）
+    elapsed_str = f"{int(elapsed // 60)}m{int(elapsed % 60)}s"
+    remaining_str = f"{int(remaining_time // 60)}m{int(remaining_time % 60)}s" if speed > 0 else "N/A"
+    
     progress = f"🚀 Progress: {current}/{total} ({processed_percent:.1f}%)"
-    stats = f"✅ Valid: {valid_count} | ️ Elapsed: {elapsed:.1f}s |  📈 Speed: {speed:.1f} proxies/s"
+    stats = (f"✅ Valid: {valid_count} | ⏱️ Elapsed: {elapsed_str} | "
+             f"⌛ Remaining: {remaining_str} | 📈 Speed: {speed:.1f} proxies/s")
     
     logger.info(progress)
     logger.info(stats)
