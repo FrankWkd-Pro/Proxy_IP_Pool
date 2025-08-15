@@ -34,13 +34,22 @@ jobs:
         id: commit-message
         run: |
           python scripts/commit_formatter.py
-          echo "COMMIT_MESSAGE=$(cat commit_message.txt)" >> $GITHUB_ENV
+          # 关键修复：使用 heredoc语法处理多行环境变量
+          echo "COMMIT_MESSAGE<<EOF" >> $GITHUB_ENV
+          cat commit_message.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
           
       - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@users.noreply.github.com'
           git add data/valid_ips.txt
+          
+          # 检查是否有更改（避免空提交）
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
           
           # 使用格式化的提交消息
           git commit -m "${{ env.COMMIT_MESSAGE }}"
@@ -53,9 +62,18 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '⚠️ Proxy update failed! Check the Action logs.'
-            })
+            const repo = context.repo;
+            # 修复通知逻辑：判断是否有issue编号
+            if (context.issue.number) {
+              await github.issues.createComment({
+                ...repo,
+                issue_number: context.issue.number,
+                body: '⚠️ Proxy update failed! Check the Action logs.'
+              });
+            } else {
+              await github.issues.create({
+                ...repo,
+                title: 'Proxy Update Failed',
+                body: '⚠️ The scheduled proxy update failed. Check the Action logs for details.'
+              });
+            }
