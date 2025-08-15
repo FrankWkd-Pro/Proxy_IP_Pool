@@ -38,7 +38,7 @@ jobs:
           echo "COMMIT_MESSAGE<<EOF" >> $GITHUB_ENV
           # 确保提交消息末尾没有多余空行（可能干扰分隔符）
           sed -e ':a' -e '/^\n*$/{$d;N;ba' -e '}' commit_message.txt >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          echo "EOF >> $GITHUB_ENV
 
           
       - name: Commit and push changes
