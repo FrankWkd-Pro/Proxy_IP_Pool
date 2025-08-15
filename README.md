@@ -1,5 +1,5 @@
 # Proxy_IP_Pool
-A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Using Github Actions.
+A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Using Github Actions.  
 一个用来自动爬取并检测可用免费 Proxy 代理服务器的仓库。使用 Github Actions 自动爬取一些免费 Proxy 代理服务器的 Proxy IP。爬取完成后会自动检测 IP 的连通性和可用性，并且输出可用的 IP 到 data/ 目录下。
 
 ## Todo
@@ -11,7 +11,7 @@ A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Usin
 
 # 免责声明 / Disclaimer
 ### 1. 项目目的声明
-本项目（Proxy IP Pool）仅为技术研究与学习目的开发，旨在探索网络爬虫、代理验证等技术实现原理。项目提供的代理IP仅用于教育目的，不得用于任何非法活动或商业用途。
+本项目（Proxy IP Pool）仅为技术研究与学习目的开发，旨在探索网络爬虫、代理验证等技术实现原理。项目提供的代理IP仅用于教育目的，不得用于任何非法活动或商业用途。  
 **项目创作者(FrankWkd-Pro)具有最高级别的项目解释权。**
 
 ### 2. 时效性与数据删除
@@ -94,7 +94,7 @@ A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Usin
 ## English Version
 
 ### 1. Purpose Statement
-This project (Proxy IP Pool) is developed solely for technical research and educational purposes, aiming to explore the implementation principles of web crawling and proxy validation technologies. The proxy IPs provided by this project are for educational use only and shall not be used for any illegal activities or commercial purposes.
+This project (Proxy IP Pool) is developed solely for technical research and educational purposes, aiming to explore the implementation principles of web crawling and proxy validation technologies. The proxy IPs provided by this project are for educational use only and shall not be used for any illegal activities or commercial purposes.  
 **Project creators(FrankWkd-Pro) have the highest level of project interpretation rights.**
 
 ### 2. Timeliness and Data Deletion
