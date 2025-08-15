@@ -37,7 +37,7 @@ jobs:
           {
             echo 'COMMIT_MESSAGE<<EOF'
             cat commit_message.txt
-            echo EOF
+            echo 'EOF'
           } >> $GITHUB_ENV
 
 
