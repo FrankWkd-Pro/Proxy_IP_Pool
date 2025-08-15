@@ -33,12 +33,13 @@ jobs:
       - name: Generate commit message
         id: commit-message
         run: |
+          python scripts/commit_formatter.py
           {
-            python scripts/commit_formatter.py
             echo 'COMMIT_MESSAGE<<EOF'
-            cat commit_message.txt 
+            cat commit_message.txt
             echo EOF
           } >> $GITHUB_ENV
+
 
           
       - name: Commit and push changes
