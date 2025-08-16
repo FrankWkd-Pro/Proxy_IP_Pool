@@ -1,0 +1,2018 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+secret: ""
+
+proxies:
+  - name: "Proxy_1_1ms"
+    type: http
+    server: 23.247.136.248
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_2_1ms"
+    type: http
+    server: 47.251.73.54
+    port: 64
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_3_1ms"
+    type: http
+    server: 23.247.136.254
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_4_2ms"
+    type: http
+    server: 47.251.43.115
+    port: 33333
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_5_2ms"
+    type: http
+    server: 198.74.51.79
+    port: 8888
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_6_2ms"
+    type: http
+    server: 47.251.87.74
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_7_2ms"
+    type: http
+    server: 47.254.36.213
+    port: 20000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_8_19ms"
+    type: http
+    server: 23.239.111.194
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_9_39ms"
+    type: http
+    server: 23.237.210.82
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_10_43ms"
+    type: http
+    server: 38.147.98.190
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_11_65ms"
+    type: http
+    server: 45.22.209.157
+    port: 8888
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_12_65ms"
+    type: http
+    server: 67.43.228.253
+    port: 16165
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_13_65ms"
+    type: http
+    server: 72.10.160.174
+    port: 25509
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_14_65ms"
+    type: http
+    server: 67.43.228.250
+    port: 30041
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_15_67ms"
+    type: http
+    server: 47.89.184.18
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_16_68ms"
+    type: http
+    server: 47.90.167.27
+    port: 8880
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_17_68ms"
+    type: http
+    server: 47.252.11.233
+    port: 91
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_18_69ms"
+    type: http
+    server: 152.53.168.53
+    port: 45119
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_19_69ms"
+    type: http
+    server: 152.53.168.53
+    port: 36435
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_20_69ms"
+    type: http
+    server: 152.53.168.53
+    port: 44887
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_21_69ms"
+    type: http
+    server: 152.53.168.53
+    port: 29057
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_22_71ms"
+    type: http
+    server: 45.174.95.142
+    port: 999
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_23_71ms"
+    type: http
+    server: 104.222.32.98
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_24_71ms"
+    type: http
+    server: 47.252.18.37
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_25_71ms"
+    type: http
+    server: 72.10.160.90
+    port: 26727
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_26_71ms"
+    type: http
+    server: 47.89.159.212
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_27_71ms"
+    type: http
+    server: 47.89.159.212
+    port: 3129
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_28_71ms"
+    type: http
+    server: 47.90.205.231
+    port: 33333
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_29_72ms"
+    type: http
+    server: 47.90.167.27
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_30_72ms"
+    type: http
+    server: 72.10.160.90
+    port: 9745
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_31_72ms"
+    type: http
+    server: 47.90.149.238
+    port: 111
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_32_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 55775
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_33_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 49425
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_34_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 26657
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_35_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 15019
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_36_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 33501
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_37_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 42086
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_38_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 44985
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_39_73ms"
+    type: http
+    server: 152.53.194.46
+    port: 8065
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_40_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 37729
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_41_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 43185
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_42_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 32343
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_43_73ms"
+    type: http
+    server: 152.53.194.46
+    port: 8029
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_44_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 22612
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_45_73ms"
+    type: http
+    server: 173.209.63.70
+    port: 8067
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_46_73ms"
+    type: http
+    server: 152.53.168.53
+    port: 32145
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_47_74ms"
+    type: http
+    server: 152.53.168.53
+    port: 58273
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_48_74ms"
+    type: http
+    server: 152.53.168.53
+    port: 16371
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_49_74ms"
+    type: http
+    server: 152.53.168.53
+    port: 23149
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_50_74ms"
+    type: http
+    server: 152.53.168.53
+    port: 42425
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_51_75ms"
+    type: http
+    server: 152.53.168.53
+    port: 49661
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_52_77ms"
+    type: http
+    server: 152.26.229.52
+    port: 9443
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_53_84ms"
+    type: http
+    server: 4.156.78.45
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_54_104ms"
+    type: http
+    server: 47.91.29.151
+    port: 1311
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_55_104ms"
+    type: http
+    server: 45.146.163.31
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_56_105ms"
+    type: http
+    server: 47.91.29.151
+    port: 91
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_57_105ms"
+    type: http
+    server: 8.209.249.89
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_58_106ms"
+    type: http
+    server: 181.174.164.221
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_59_106ms"
+    type: http
+    server: 8.209.255.114
+    port: 20172
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_60_106ms"
+    type: http
+    server: 8.209.255.13
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_61_129ms"
+    type: http
+    server: 8.220.204.215
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_62_133ms"
+    type: http
+    server: 59.7.246.4
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_63_133ms"
+    type: http
+    server: 8.213.129.15
+    port: 10250
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_64_135ms"
+    type: http
+    server: 123.141.181.38
+    port: 5031
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_65_135ms"
+    type: http
+    server: 123.141.181.53
+    port: 5031
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_66_135ms"
+    type: http
+    server: 8.213.151.128
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_67_136ms"
+    type: http
+    server: 123.141.181.8
+    port: 5031
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_68_137ms"
+    type: http
+    server: 198.49.68.80
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_69_138ms"
+    type: http
+    server: 123.141.181.12
+    port: 5031
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_70_139ms"
+    type: http
+    server: 123.141.181.49
+    port: 5031
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_71_140ms"
+    type: http
+    server: 123.141.181.24
+    port: 5031
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_72_144ms"
+    type: http
+    server: 123.141.181.1
+    port: 5031
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_73_145ms"
+    type: http
+    server: 4.195.16.140
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_74_146ms"
+    type: http
+    server: 82.102.10.253
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_75_149ms"
+    type: http
+    server: 4.245.123.244
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_76_149ms"
+    type: http
+    server: 108.141.130.146
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_77_149ms"
+    type: http
+    server: 51.159.159.73
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_78_152ms"
+    type: http
+    server: 175.110.114.216
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_79_153ms"
+    type: http
+    server: 47.243.92.199
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_80_153ms"
+    type: http
+    server: 147.28.240.214
+    port: 9400
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_81_154ms"
+    type: http
+    server: 92.67.186.210
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_82_154ms"
+    type: http
+    server: 47.76.144.139
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_83_154ms"
+    type: http
+    server: 91.107.147.219
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_84_156ms"
+    type: http
+    server: 147.28.240.214
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_85_156ms"
+    type: http
+    server: 8.209.96.245
+    port: 1099
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_86_157ms"
+    type: http
+    server: 47.91.65.23
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_87_158ms"
+    type: http
+    server: 147.28.240.214
+    port: 9443
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_88_159ms"
+    type: http
+    server: 37.120.162.180
+    port: 34051
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_89_159ms"
+    type: http
+    server: 89.58.57.45
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_90_159ms"
+    type: http
+    server: 147.28.240.214
+    port: 9401
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_91_159ms"
+    type: http
+    server: 147.28.240.214
+    port: 443
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_92_159ms"
+    type: http
+    server: 116.203.107.220
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_93_160ms"
+    type: http
+    server: 159.69.57.20
+    port: 8880
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_94_160ms"
+    type: http
+    server: 49.12.103.92
+    port: 8091
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_95_161ms"
+    type: http
+    server: 222.59.173.105
+    port: 45124
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_96_161ms"
+    type: http
+    server: 222.59.173.105
+    port: 45237
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_97_162ms"
+    type: http
+    server: 57.129.81.201
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_98_162ms"
+    type: http
+    server: 222.59.173.105
+    port: 45227
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_99_162ms"
+    type: http
+    server: 222.59.173.105
+    port: 45094
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_100_162ms"
+    type: http
+    server: 222.59.173.105
+    port: 45123
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_101_162ms"
+    type: http
+    server: 89.58.55.33
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_102_165ms"
+    type: http
+    server: 36.138.53.26
+    port: 10019
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_103_166ms"
+    type: http
+    server: 141.98.153.86
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_104_166ms"
+    type: http
+    server: 36.138.53.26
+    port: 10017
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_105_168ms"
+    type: http
+    server: 47.237.92.86
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_106_168ms"
+    type: http
+    server: 143.42.66.91
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_107_168ms"
+    type: http
+    server: 8.219.97.248
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_108_168ms"
+    type: http
+    server: 8.219.229.53
+    port: 1081
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_109_169ms"
+    type: http
+    server: 139.59.228.95
+    port: 8118
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_110_169ms"
+    type: http
+    server: 79.110.200.27
+    port: 8000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_111_170ms"
+    type: http
+    server: 191.252.204.220
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_112_171ms"
+    type: http
+    server: 200.174.198.86
+    port: 8888
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_113_173ms"
+    type: http
+    server: 85.214.190.195
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_114_175ms"
+    type: http
+    server: 157.180.121.252
+    port: 45678
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_115_176ms"
+    type: http
+    server: 157.180.121.252
+    port: 30903
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_116_176ms"
+    type: http
+    server: 157.180.121.252
+    port: 25849
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_117_176ms"
+    type: http
+    server: 157.180.121.252
+    port: 26779
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_118_177ms"
+    type: http
+    server: 157.180.121.252
+    port: 42217
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_119_181ms"
+    type: http
+    server: 8.220.204.92
+    port: 9098
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_120_181ms"
+    type: http
+    server: 8.215.3.250
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_121_182ms"
+    type: http
+    server: 8.215.15.163
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_122_182ms"
+    type: http
+    server: 149.129.226.9
+    port: 9080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_123_183ms"
+    type: http
+    server: 185.82.218.85
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_124_183ms"
+    type: http
+    server: 47.250.159.65
+    port: 8081
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_125_183ms"
+    type: http
+    server: 140.238.184.182
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_126_185ms"
+    type: http
+    server: 27.71.228.32
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_127_185ms"
+    type: http
+    server: 47.250.177.202
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_128_185ms"
+    type: http
+    server: 47.250.51.110
+    port: 9098
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_129_186ms"
+    type: http
+    server: 119.3.113.151
+    port: 9094
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_130_186ms"
+    type: http
+    server: 119.3.113.152
+    port: 9094
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_131_186ms"
+    type: http
+    server: 57.129.81.201
+    port: 999
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_132_186ms"
+    type: http
+    server: 222.59.173.105
+    port: 45250
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_133_187ms"
+    type: http
+    server: 116.107.173.169
+    port: 10005
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_134_187ms"
+    type: http
+    server: 101.66.199.144
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_135_187ms"
+    type: http
+    server: 119.3.113.150
+    port: 9094
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_136_188ms"
+    type: http
+    server: 27.79.180.22
+    port: 16000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_137_189ms"
+    type: http
+    server: 121.43.154.123
+    port: 20000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_138_190ms"
+    type: http
+    server: 116.107.173.169
+    port: 10002
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_139_190ms"
+    type: http
+    server: 8.220.141.8
+    port: 13
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_140_191ms"
+    type: http
+    server: 8.220.136.174
+    port: 4006
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_141_191ms"
+    type: http
+    server: 103.94.52.70
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_142_191ms"
+    type: http
+    server: 8.220.136.174
+    port: 1080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_143_191ms"
+    type: http
+    server: 57.129.81.201
+    port: 8081
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_144_191ms"
+    type: http
+    server: 27.79.139.183
+    port: 16000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_145_192ms"
+    type: http
+    server: 124.108.6.20
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_146_193ms"
+    type: http
+    server: 27.79.220.146
+    port: 16000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_147_194ms"
+    type: http
+    server: 47.122.65.32
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_148_194ms"
+    type: http
+    server: 185.235.16.12
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_149_195ms"
+    type: http
+    server: 176.126.103.194
+    port: 44214
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_150_195ms"
+    type: http
+    server: 34.48.171.130
+    port: 33080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_151_196ms"
+    type: http
+    server: 113.204.79.230
+    port: 9091
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_152_197ms"
+    type: http
+    server: 47.122.62.83
+    port: 1081
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_153_199ms"
+    type: http
+    server: 49.229.100.235
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_154_199ms"
+    type: http
+    server: 39.102.213.213
+    port: 57114
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_155_200ms"
+    type: http
+    server: 27.79.238.173
+    port: 16000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_156_201ms"
+    type: http
+    server: 39.102.208.149
+    port: 5060
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_157_202ms"
+    type: http
+    server: 101.200.158.109
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_158_202ms"
+    type: http
+    server: 47.92.194.235
+    port: 20000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_159_202ms"
+    type: http
+    server: 27.79.128.111
+    port: 16000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_160_202ms"
+    type: http
+    server: 124.193.203.41
+    port: 8000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_161_202ms"
+    type: http
+    server: 179.96.28.58
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_162_203ms"
+    type: http
+    server: 61.158.175.38
+    port: 9002
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_163_204ms"
+    type: http
+    server: 8.212.151.166
+    port: 9797
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_164_205ms"
+    type: http
+    server: 153.0.171.163
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_165_207ms"
+    type: http
+    server: 183.215.23.242
+    port: 9091
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_166_208ms"
+    type: http
+    server: 39.101.65.228
+    port: 8181
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_167_209ms"
+    type: http
+    server: 47.92.82.167
+    port: 1088
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_168_209ms"
+    type: http
+    server: 218.75.224.4
+    port: 3309
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_169_209ms"
+    type: http
+    server: 39.104.27.89
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_170_209ms"
+    type: http
+    server: 39.102.208.149
+    port: 12000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_171_211ms"
+    type: http
+    server: 59.153.100.98
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_172_212ms"
+    type: http
+    server: 188.132.222.11
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_173_213ms"
+    type: http
+    server: 103.231.78.36
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_174_214ms"
+    type: http
+    server: 114.215.127.92
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_175_215ms"
+    type: http
+    server: 113.160.132.195
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_176_219ms"
+    type: http
+    server: 47.109.110.100
+    port: 8089
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_177_222ms"
+    type: http
+    server: 57.129.81.201
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_178_233ms"
+    type: http
+    server: 101.66.199.251
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_179_233ms"
+    type: http
+    server: 195.158.8.123
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_180_243ms"
+    type: http
+    server: 156.244.11.6
+    port: 4145
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_181_245ms"
+    type: http
+    server: 94.247.129.244
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_182_246ms"
+    type: http
+    server: 119.252.173.26
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_183_246ms"
+    type: http
+    server: 119.235.112.42
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_184_247ms"
+    type: http
+    server: 47.91.109.17
+    port: 8080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_185_251ms"
+    type: http
+    server: 47.91.110.148
+    port: 1000
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_186_251ms"
+    type: http
+    server: 213.87.103.76
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_187_251ms"
+    type: http
+    server: 47.91.104.88
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_188_253ms"
+    type: http
+    server: 47.91.115.179
+    port: 9080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_189_253ms"
+    type: http
+    server: 185.105.102.189
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_190_253ms"
+    type: http
+    server: 47.91.121.127
+    port: 9999
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_191_253ms"
+    type: http
+    server: 185.105.102.179
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_192_255ms"
+    type: http
+    server: 219.65.73.81
+    port: 80
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_193_256ms"
+    type: http
+    server: 47.91.115.179
+    port: 9091
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_194_258ms"
+    type: http
+    server: 101.66.198.186
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_195_263ms"
+    type: http
+    server: 154.205.147.234
+    port: 1080
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_196_298ms"
+    type: http
+    server: 101.66.198.62
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_197_299ms"
+    type: http
+    server: 41.223.119.156
+    port: 3128
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_198_337ms"
+    type: http
+    server: 101.66.194.115
+    port: 8085
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_199_381ms"
+    type: http
+    server: 123.30.154.171
+    port: 7777
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+  - name: "Proxy_200_640ms"
+    type: http
+    server: 86.109.3.27
+    port: 10048
+    username: ""
+    password: ""
+    timeout: 1000
+    keep-alive: true
+
+proxy-groups:
+  - name: "AutoSelect"
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "Proxy_1_1ms"
+      - "Proxy_2_1ms"
+      - "Proxy_3_1ms"
+      - "Proxy_4_2ms"
+      - "Proxy_5_2ms"
+      - "Proxy_6_2ms"
+      - "Proxy_7_2ms"
+      - "Proxy_8_19ms"
+      - "Proxy_9_39ms"
+      - "Proxy_10_43ms"
+      - "Proxy_11_65ms"
+      - "Proxy_12_65ms"
+      - "Proxy_13_65ms"
+      - "Proxy_14_65ms"
+      - "Proxy_15_67ms"
+      - "Proxy_16_68ms"
+      - "Proxy_17_68ms"
+      - "Proxy_18_69ms"
+      - "Proxy_19_69ms"
+      - "Proxy_20_69ms"
+      - "Proxy_21_69ms"
+      - "Proxy_22_71ms"
+      - "Proxy_23_71ms"
+      - "Proxy_24_71ms"
+      - "Proxy_25_71ms"
+      - "Proxy_26_71ms"
+      - "Proxy_27_71ms"
+      - "Proxy_28_71ms"
+      - "Proxy_29_72ms"
+      - "Proxy_30_72ms"
+      - "Proxy_31_72ms"
+      - "Proxy_32_73ms"
+      - "Proxy_33_73ms"
+      - "Proxy_34_73ms"
+      - "Proxy_35_73ms"
+      - "Proxy_36_73ms"
+      - "Proxy_37_73ms"
+      - "Proxy_38_73ms"
+      - "Proxy_39_73ms"
+      - "Proxy_40_73ms"
+      - "Proxy_41_73ms"
+      - "Proxy_42_73ms"
+      - "Proxy_43_73ms"
+      - "Proxy_44_73ms"
+      - "Proxy_45_73ms"
+      - "Proxy_46_73ms"
+      - "Proxy_47_74ms"
+      - "Proxy_48_74ms"
+      - "Proxy_49_74ms"
+      - "Proxy_50_74ms"
+      - "Proxy_51_75ms"
+      - "Proxy_52_77ms"
+      - "Proxy_53_84ms"
+      - "Proxy_54_104ms"
+      - "Proxy_55_104ms"
+      - "Proxy_56_105ms"
+      - "Proxy_57_105ms"
+      - "Proxy_58_106ms"
+      - "Proxy_59_106ms"
+      - "Proxy_60_106ms"
+      - "Proxy_61_129ms"
+      - "Proxy_62_133ms"
+      - "Proxy_63_133ms"
+      - "Proxy_64_135ms"
+      - "Proxy_65_135ms"
+      - "Proxy_66_135ms"
+      - "Proxy_67_136ms"
+      - "Proxy_68_137ms"
+      - "Proxy_69_138ms"
+      - "Proxy_70_139ms"
+      - "Proxy_71_140ms"
+      - "Proxy_72_144ms"
+      - "Proxy_73_145ms"
+      - "Proxy_74_146ms"
+      - "Proxy_75_149ms"
+      - "Proxy_76_149ms"
+      - "Proxy_77_149ms"
+      - "Proxy_78_152ms"
+      - "Proxy_79_153ms"
+      - "Proxy_80_153ms"
+      - "Proxy_81_154ms"
+      - "Proxy_82_154ms"
+      - "Proxy_83_154ms"
+      - "Proxy_84_156ms"
+      - "Proxy_85_156ms"
+      - "Proxy_86_157ms"
+      - "Proxy_87_158ms"
+      - "Proxy_88_159ms"
+      - "Proxy_89_159ms"
+      - "Proxy_90_159ms"
+      - "Proxy_91_159ms"
+      - "Proxy_92_159ms"
+      - "Proxy_93_160ms"
+      - "Proxy_94_160ms"
+      - "Proxy_95_161ms"
+      - "Proxy_96_161ms"
+      - "Proxy_97_162ms"
+      - "Proxy_98_162ms"
+      - "Proxy_99_162ms"
+      - "Proxy_100_162ms"
+      - "Proxy_101_162ms"
+      - "Proxy_102_165ms"
+      - "Proxy_103_166ms"
+      - "Proxy_104_166ms"
+      - "Proxy_105_168ms"
+      - "Proxy_106_168ms"
+      - "Proxy_107_168ms"
+      - "Proxy_108_168ms"
+      - "Proxy_109_169ms"
+      - "Proxy_110_169ms"
+      - "Proxy_111_170ms"
+      - "Proxy_112_171ms"
+      - "Proxy_113_173ms"
+      - "Proxy_114_175ms"
+      - "Proxy_115_176ms"
+      - "Proxy_116_176ms"
+      - "Proxy_117_176ms"
+      - "Proxy_118_177ms"
+      - "Proxy_119_181ms"
+      - "Proxy_120_181ms"
+      - "Proxy_121_182ms"
+      - "Proxy_122_182ms"
+      - "Proxy_123_183ms"
+      - "Proxy_124_183ms"
+      - "Proxy_125_183ms"
+      - "Proxy_126_185ms"
+      - "Proxy_127_185ms"
+      - "Proxy_128_185ms"
+      - "Proxy_129_186ms"
+      - "Proxy_130_186ms"
+      - "Proxy_131_186ms"
+      - "Proxy_132_186ms"
+      - "Proxy_133_187ms"
+      - "Proxy_134_187ms"
+      - "Proxy_135_187ms"
+      - "Proxy_136_188ms"
+      - "Proxy_137_189ms"
+      - "Proxy_138_190ms"
+      - "Proxy_139_190ms"
+      - "Proxy_140_191ms"
+      - "Proxy_141_191ms"
+      - "Proxy_142_191ms"
+      - "Proxy_143_191ms"
+      - "Proxy_144_191ms"
+      - "Proxy_145_192ms"
+      - "Proxy_146_193ms"
+      - "Proxy_147_194ms"
+      - "Proxy_148_194ms"
+      - "Proxy_149_195ms"
+      - "Proxy_150_195ms"
+      - "Proxy_151_196ms"
+      - "Proxy_152_197ms"
+      - "Proxy_153_199ms"
+      - "Proxy_154_199ms"
+      - "Proxy_155_200ms"
+      - "Proxy_156_201ms"
+      - "Proxy_157_202ms"
+      - "Proxy_158_202ms"
+      - "Proxy_159_202ms"
+      - "Proxy_160_202ms"
+      - "Proxy_161_202ms"
+      - "Proxy_162_203ms"
+      - "Proxy_163_204ms"
+      - "Proxy_164_205ms"
+      - "Proxy_165_207ms"
+      - "Proxy_166_208ms"
+      - "Proxy_167_209ms"
+      - "Proxy_168_209ms"
+      - "Proxy_169_209ms"
+      - "Proxy_170_209ms"
+      - "Proxy_171_211ms"
+      - "Proxy_172_212ms"
+      - "Proxy_173_213ms"
+      - "Proxy_174_214ms"
+      - "Proxy_175_215ms"
+      - "Proxy_176_219ms"
+      - "Proxy_177_222ms"
+      - "Proxy_178_233ms"
+      - "Proxy_179_233ms"
+      - "Proxy_180_243ms"
+      - "Proxy_181_245ms"
+      - "Proxy_182_246ms"
+      - "Proxy_183_246ms"
+      - "Proxy_184_247ms"
+      - "Proxy_185_251ms"
+      - "Proxy_186_251ms"
+      - "Proxy_187_251ms"
+      - "Proxy_188_253ms"
+      - "Proxy_189_253ms"
+      - "Proxy_190_253ms"
+      - "Proxy_191_253ms"
+      - "Proxy_192_255ms"
+      - "Proxy_193_256ms"
+      - "Proxy_194_258ms"
+      - "Proxy_195_263ms"
+      - "Proxy_196_298ms"
+      - "Proxy_197_299ms"
+      - "Proxy_198_337ms"
+      - "Proxy_199_381ms"
+      - "Proxy_200_640ms"
+    tolerance: 100
+
+rules:
+  - MATCH,AutoSelect
