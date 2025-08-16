@@ -231,7 +231,7 @@ bool generateClashConfig(const std::vector<Proxy>& proxies, const std::string& o
 
 int main() {
     // 读取代理列表
-    std::vector<Proxy> proxies = readProxies("/data/valid_ips.txt");
+    std::vector<Proxy> proxies = readProxies("data/valid_ips.txt");
     if (proxies.empty()) {
         return 1;
     }
