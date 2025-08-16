@@ -28,12 +28,12 @@ jobs:
       - name: Validate proxies
         run: python scripts/validate.py
 
-      # 新增步骤：编译并运行generate.cpp
+      # 新增步骤：编译并运行generate.cpp生成Clash配置
       - name: Compile and run generate.cpp
         run: |
-          # 编译C++文件（使用g++，Ubuntu默认已安装）
-          g++ scripts/generate.cpp -o generate
-          # 执行编译后的程序
+          # 编译C++文件（需要链接pthread库，因为使用了多线程）
+          g++ scripts/generate.cpp -o generate -lpthread
+          # 运行生成Clash配置
           ./generate
 
       - name: Commit and push changes
@@ -41,6 +41,7 @@ jobs:
           git config --global user.name 'FrankWkd-Pro[Bot]'
           git config --global user.email 'frankwkd@outlook.com'
           git add data/valid_ips.txt
-          # 如果generate.cpp生成了其他需要提交的文件，需要在此处添加git add命令
-          git commit -m "[Bot] Proxy IP Updated"
+          # 添加生成的Clash配置文件到提交
+          git add clash_config.yaml
+          git commit -m "[Bot] Update proxies and generate Clash config"
           git push
