@@ -6,7 +6,7 @@ A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Usin
 - [x] 自动爬取可用 IP
 - [x] 自动验证 IP 连通性
 - [x] 自动整理可用 IP
-- [ ] 自动生成 Clash 订阅
+- [x] 自动生成 Clash 订阅
 - [ ] 本地部署定时任务
 
 
