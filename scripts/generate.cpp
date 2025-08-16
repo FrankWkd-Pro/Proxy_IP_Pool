@@ -195,7 +195,7 @@ bool generateClashConfig(const std::vector<Proxy>& proxies, const std::string& o
            << "    port: " << proxies[i].port << "\n"
            << "    username: \"\"\n"
            << "    password: \"\"\n"
-           << "    timeout: 1000\n"
+           << "    timeout: 500\n"
            << "    keep-alive: true\n";
         if (i != proxies.size() - 1) ss << "\n";
     }
@@ -244,7 +244,7 @@ int main() {
     }
 
     // 生成配置文件
-    bool success = generateClashConfig(validProxies, "clash_config.yaml");
+    bool success = generateClashConfig(validProxies, "data/clash_config.yaml");
     if (success) {
         std::cout << "Clash配置文件生成成功: clash_config.yaml" << std::endl;
     } else {
