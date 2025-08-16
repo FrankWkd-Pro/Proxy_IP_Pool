@@ -1,7 +1,9 @@
 # Proxy_IP_Pool
 A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Using Github Actions.  
 一个用来自动爬取并检测可用免费 Proxy 代理服务器的仓库。使用 Github Actions 自动爬取一些免费 Proxy 代理服务器的 Proxy IP。爬取完成后会自动检测 IP 的连通性和可用性，并且输出可用的 IP 到 data/ 目录下。
-
+## 说明 / Instruction
+一次爬取大约有 30,000 个 IP 被爬取。大约有 300\~500 个 IP 通过初步测试（ping < 1000ms）。大约有 100\~300 个 IP 通过二次测试（TCP Ping < 500ms）并且被写入 Clash 订阅。这些 IP 的延迟在 10ms\~2000ms 不等（Clash 自带 ping）。速度在 1Mbps\~20Mbps 不等。  
+About 30,000 IPs are crawled in a single crawl. Approximately 300\~500 IPs passed the initial test (ping < 1000ms). About 100\~300 IPs passed the secondary test (TCP ping < 500ms) and were written to the Clash subscription. The latency of these IPs ranges from 10ms\~2000ms (Clash comes with ping). Speeds range from 1Mbps\~20Mbps.
 ## Todo
 - [x] 自动爬取可用 IP
 - [x] 自动验证 IP 连通性
