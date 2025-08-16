@@ -14,6 +14,7 @@ About 30,000 IPs are crawled in a single crawl. Approximately 300\~500 IPs passe
 
 ## 使用 / Use
 直接访问 data 目录下的 `clash_config.yaml` 文件作为代理配置导入进 Clash 即可。有问题可以直接提交 Issue。
+**警告：** 该项目目前涉及的节点全部为 http 节点！使用 http 节点即代表您将承担一切安全后果！！！
 ### 国区加速访问 / Fast Request
 本项目由 CloudFlare 提供的 Workers 提供加速服务。**使用方法**：直接打开直链复制内容导入 Clash 即可。
 **高速链接如下（警告：请按需使用。已部署 CloudFlare 盾。请求过于频繁会被永久封禁 IP 和 Token！）：**
