@@ -1,16 +1,26 @@
 # Proxy_IP_Pool
 A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Using Github Actions.  
 一个用来自动爬取并检测可用免费 Proxy 代理服务器的仓库。使用 Github Actions 自动爬取一些免费 Proxy 代理服务器的 Proxy IP。爬取完成后会自动检测 IP 的连通性和可用性，并且输出可用的 IP 到 data/ 目录下。
+
 ## 说明 / Instruction
 一次爬取大约有 30,000 个 IP 被爬取。大约有 300\~500 个 IP 通过初步测试（ping < 1000ms）。大约有 100\~300 个 IP 通过二次测试（TCP Ping < 500ms）并且被写入 Clash 订阅。这些 IP 的延迟在 10ms\~2000ms 不等（Clash 自带 ping）。速度在 1Mbps\~20Mbps 不等。  
 About 30,000 IPs are crawled in a single crawl. Approximately 300\~500 IPs passed the initial test (ping < 1000ms). About 100\~300 IPs passed the secondary test (TCP ping < 500ms) and were written to the Clash subscription. The latency of these IPs ranges from 10ms\~2000ms (Clash comes with ping). Speeds range from 1Mbps\~20Mbps.
+
 ## Todo
 - [x] 自动爬取可用 IP
 - [x] 自动验证 IP 连通性
 - [x] 自动整理可用 IP
 - [x] 自动生成 Clash 订阅
-- [ ] 本地部署定时任务
 
+## 使用 / Use
+直接访问 data 目录下的 `clash_config.yaml` 文件作为代理配置导入进 Clash 即可。有问题可以直接提交 Issue。
+### 国区加速访问 / Fast Request
+本项目由 CloudFlare 提供的 Workers 提供加速服务。**使用方法**：直接打开直链复制内容导入 Clash 即可。
+**高速链接如下（警告：请按需使用。已部署 CloudFlare 盾。请求过于频繁会被永久封禁 IP 和 Token！）：**
+- [x] Clash 代理配置文件： `https://frankwkd-proxy.pages.dev/data/clash_config.yaml`
+- [x] 可用 IP 列表： `https://frankwkd-proxy.pages.dev/data/valid_ips.txt`
+## 部署 / Deploy
+暂未开放部署。有意向请发 Issue 询问或者直接提交 PullRequest。
 
 # 免责声明 / Disclaimer
 > ## 使用即代表您同意以下所有条款：
