@@ -21,16 +21,26 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests
+
       - name: Fetch proxies
         run: python scripts/fetch.py
 
       - name: Validate proxies
         run: python scripts/validate.py
 
+      # 新增步骤：编译并运行generate.cpp
+      - name: Compile and run generate.cpp
+        run: |
+          # 编译C++文件（使用g++，Ubuntu默认已安装）
+          g++ scripts/generate.cpp -o generate
+          # 执行编译后的程序
+          ./generate
+
       - name: Commit and push changes
         run: |
           git config --global user.name 'FrankWkd-Pro[Bot]'
           git config --global user.email 'frankwkd@outlook.com'
           git add data/valid_ips.txt
+          # 如果generate.cpp生成了其他需要提交的文件，需要在此处添加git add命令
           git commit -m "[Bot] Proxy IP Updated"
           git push
