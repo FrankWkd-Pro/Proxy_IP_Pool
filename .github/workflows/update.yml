@@ -42,6 +42,6 @@ jobs:
           git config --global user.email 'frankwkd@outlook.com'
           git add data/valid_ips.txt
           # 添加生成的Clash配置文件到提交
-          git add clash_config.yaml
+          git add data/clash_config.yaml
           git commit -m "[Bot] Update proxies and generate Clash config"
           git push
