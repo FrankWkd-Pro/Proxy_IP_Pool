@@ -1,4 +1,4 @@
-# 此项目已经停止维护。如果像自己部署请 Fork 本项目。
+# 此项目已经停止维护。如果想自己部署请 Fork 本项目。
 
 # Proxy_IP_Pool
 A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Using Github Actions.  
