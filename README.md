@@ -1,3 +1,5 @@
+# 此项目已经停止维护。如果像自己部署请 Fork 本项目。
+
 # Proxy_IP_Pool
 A Repo for FrankWkd to Save Available Proxy IPs and Update Available IPs by Using Github Actions.  
 一个用来自动爬取并检测可用免费 Proxy 代理服务器的仓库。使用 Github Actions 自动爬取一些免费 Proxy 代理服务器的 Proxy IP。爬取完成后会自动检测 IP 的连通性和可用性，并且输出可用的 IP 到 data/ 目录下。
